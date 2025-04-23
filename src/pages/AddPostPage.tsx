@@ -14,7 +14,7 @@ interface AddPostPageProps {
 
 export default function AddPostPage({ onAddPost }: AddPostPageProps) {
   const navigate = useNavigate();
-  const [submitting, setSubmitting] = useState(false);
+  const [_, setSubmitting] = useState(false);
 
   const handleSubmit = (data: {
     title: string;

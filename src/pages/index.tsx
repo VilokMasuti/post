@@ -25,7 +25,7 @@ interface HomePageProps {
 
 const POSTS_PER_PAGE = 10;
 
-const HomePage = ({ newPosts, onUpdatePost }: HomePageProps) => {
+const HomePage = ({ newPosts,  }: HomePageProps) => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
